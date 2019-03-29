@@ -1,6 +1,6 @@
-Host: https://workingcloud.github.io
+Host: https://webdevtools.github.io/
 
 User-agent: *
 Disallow: /projects/
 
-Sitemap: https://workingcloud.github.io/sitemap.xml
+Sitemap: https://webdevtools.github.io/sitemap.xml
