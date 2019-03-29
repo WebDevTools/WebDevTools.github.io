@@ -1,0 +1,28 @@
+.clearfix() {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+.btn-modify(@bg, @color: #fff) {
+	background: @bg;
+	box-shadow: 0 4px 0 darken(@bg, 7%);
+	color: @color;
+	transition: all .4s;
+
+	&:hover {
+		background: darken(@bg, 7%);
+		box-shadow: 0 4px 0 darken(darken(@bg, 7%), 7%);
+	}
+}
+
+.square(@size) {
+	width: @size;
+	height: @size;
+}

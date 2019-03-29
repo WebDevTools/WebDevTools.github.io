@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>webdesignt</title>
+		<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$("a.tab").click(function () {
+					$(".now").removeClass("now");
+					$(this).addClass("now");
+					$(".about-us-in").slideUp();
+
+					var content_show = $(this).attr("title");
+					$("#"+content_show).slideDown();
+
+					return false;
+					});
+				});
+		</script>
+		<!-- <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$.pixlayout({clip: true, src: "maket.jpg", show:true, center:true, top:0, left:0, pervious: false});
+		}); 
+		</script> -->
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="menu-main">
+				<div class="menu">
+					<p><span>JUMP TO:</span></p>
+					<ul>
+						<li><a href="#chapter_1" class="active">home</a></li>
+						<li><a href="#chapter_2">about us</a></li>
+						<li><a href="#chapter_3">portfolio</a></li>
+						<li><a href="#chapter_4">contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="home section" id="chapter_1">
+				<img src="images/logo.png" class="logo" alt="" />
+				<img src="images/rocket.png" class="rocket" alt="" />
+				<div class="clr"></div>
+				<div class="welcome">
+					<h1>Welcome</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in porttitor metus. Quisque quis nunc vel odio porttitor faucibus. Morbi at risus eu augue egestas dignissim ac a leo. In et ligula lacus. Quisque cursus risus eu felis commodo volutpat congue justo accumsan. Phasellus cursus dolor vel est volutpat sit amet viverra justo venenatis. Duis vel tempor diam. Nullam quis nunc ac felis blandit hendrerit et quis elit. Nunc scelerisque turpis vel metus dapibus ut rhoncus urna aliquam. Duis lacinia tincidunt vestibulum. Pellentesque pellentesque semper nulla vitae placerat. Morbi lobortis, nibh ac auctor venenatis, augue erat condimentum dolor, sed volutpat magna lacus ac justo. Aenean ut blandit tortor. Nunc venenatis tincidunt sapien, at lobortis leo sagittis vitae. Praesent quam nunc, posuere ac pharetra ac, adipiscing ut ipsum. Cras commodo rutrum lorem at pellentesque. Praesent vel dui dignissim lorem semper adipiscing. condimentum egestas. Donec vitae quam mi. Nulla non magna elit. Vivamus ac orci sit amet est malesuada vehicula. Mauris quis nunc risus. Morbi non ullamcorper augue.</p>
+				</div>
+				<div class="network">
+					<h2>network</h2>
+					<p><a href="#"><img src="images/rss.png" alt="#" /></a>1500</p>
+					<p><a href="#"><img src="images/facebook.png" alt="#" /></a>2200</p>
+					<p><a href="#"><img src="images/twitter.png" alt="#" /></a>1260</p>
+				</div>
+			</div>
+			<div class="about-main section" id="chapter_2">
+				<div class="baloon">
+					<img src="images/balloons.png" alt="" />
+				</div>
+				<div class="about-us">
+					<h1>about us</h1>
+					<div class="about-us-in" id="about_us_1">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in porttitor metus. Quisque quis nunc vel odio porttitor faucibus. Morbi at risus eu augue egestas dignissim ac a leo. In et ligula lacus. Quisque cursus risus eu felis commodo volutpat congue justo accumsan. Phasellus cursus dolor vel est volutpat sit amet viverra justo venenatis. Duis vel tempor diam. Nullam quis nunc ac felis blandit hendrerit et quis elit. Nunc scelerisque turpis vel metus dapibus ut rhoncus urna aliquam. Duis lacinia tincidunt vestibulum. Pellentesque pellentesque semper nulla vitae placerat. Morbi lobortis, nibh ac auctor venenatis, augue erat condimentum dolor, sed volutpat magna lacus ac justo. Aenean ut blandit tortor. Nunc venenatis tincidunt sapien, at lobortis leo sagittis vitae. Praesent quam nunc, posuere ac pharetra ac, adipiscing ut ipsum. Cras commodo rutrum lorem at pellentesque.
+						</p>
+					</div>
+					<div class="about-us-in" id="about_us_2">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in porttitor metus. Quisque quis nunc vel odio porttitor faucibus. Morbi at risus eu augue egestas dignissim ac a leo. In et ligula lacus. Quisque cursus risus eu felis commodo volutpat congue justo accumsan. Phasellus cursus dolor vel est volutpat sit amet viverra justo venenatis. Duis vel tempor diam. Nullam quis nunc ac felis blandit hendrerit et quis elit. Nunc scelerisque turpis vel metus dapibus ut rhoncus urna aliquam. Duis lacinia tincidunt vestibulum. Pellentesque pellentesque semper nulla vitae placerat. Morbi lobortis, nibh ac auctor venenatis, augue erat condimentum dolor, sed volutpat magna lacus ac justo. Aenean ut blandit tortor.
+						</p>
+					</div>
+					<div class="about-us-in" id="about_us_3">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in porttitor metus. Quisque quis nunc vel odio porttitor faucibus. Morbi at risus eu augue egestas dignissim ac a leo. In et ligula lacus. Quisque cursus risus eu felis commodo volutpat congue justo accumsan. Phasellus cursus dolor vel est volutpat sit amet viverra justo venenatis. Duis vel tempor diam. Nullam quis nunc ac felis blandit hendrerit et quis elit. Nunc scelerisque turpis vel metus dapibus ut rhoncus urna aliquam. Duis lacinia tincidunt vestibulum.
+						</p>
+					</div>
+				</div>
+				<div class="clr"></div>
+				<ul class="tabs">
+					<li><a href="#" title="about_us_1" class="tab now">Who are we?</a></li>
+					<li><a href="#" title="about_us_2" class="tab">What do we do?</a></li>
+					<li><a href="#" title="about_us_3" class="tab">Our Mission</a></li>
+				</ul>
+				<div class="clr"></div>
+			</div>
+			<div class="portfolio-main section" id="chapter_3">
+				<div class="portfolio-main-in">
+					<div class="portfolio">
+						<h1>portfolio</h1>
+						<p><img src="images/portfolio.jpg" alt="#" /></p>
+					</div>
+					<div class="findia">
+						<p>find us at</p>
+						<img src="images/find_us_at_1.png" alt="#" />
+						<img src="images/find_us_at_2.png" alt="#" />
+					</div>
+				</div>
+			</div>
+			<div class="contact-main section" id="chapter_4">
+				<div class="contact-tree-left"></div>
+				<div class="contact-tree-right"></div>
+				<div class="contact">
+					<h1>Contact us</h1>
+					<div class="contact-form">
+						<form action="#" method="post">
+							<div class="input-main">
+								<div>
+									<input type="text" name="first_neme" />
+								</div>
+								<p>Your name</p>
+							</div>
+							<div class="input-main">
+								<div>
+									<input type="text" name="mail_addres" />
+								</div>
+								<p>Your email address</p>
+							</div>
+							<div class="txtarea">
+								<div>
+									<textarea></textarea>
+								</div>
+								<p>Your Question / Comment</p>
+								<input type="image" src="images/SEND.png" alt="#" name="ok" />
+							</div>
+						</form>
+					</div>
+				</div>
+				<p class="footer">Or you can give us a call: <span>+1 800 555 5555</span></p>
+			</div>
+		</div>
+
+<script src="js/jquery.scrollTo-1.4.2-min.js" type="text/javascript"></script>
+<script src="js/waypoints.min.js" type="text/javascript"></script>
+<script src="js/navbar2.js" type="text/javascript"></script>
+
+	</body>
+</html>

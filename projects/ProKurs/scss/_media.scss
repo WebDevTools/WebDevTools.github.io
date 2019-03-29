@@ -1,0 +1,159 @@
+
+@media only screen and (max-width : 1200px) {
+	.tizers {
+		.tiz_img, .tiz_descr {
+			display: block;
+			text-align: center;
+		}
+	}
+	section.s_profi {
+		padding: 30px 0 30px;
+	}
+	
+	.s_profi {
+		.block_left, .block_right, .profi_left {
+			float: none;
+			width: 100%;
+			text-align: center;
+		}
+		.block_right {
+			margin-top: 20px;
+			form {
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width : 800px) {
+	.tizers {
+		padding: 30px 0 0;
+		.tizer {
+			width: 50%;
+			margin-bottom: 30px;
+		}
+	}
+	section.s_contacts {
+		padding: 30px 0 0;
+	}
+	footer {
+    	padding: 20px 0 30px;
+	}
+}
+
+@media only screen and (max-width : 600px) {
+	.top_line {
+		text-align: center;
+		.logo {
+			float: none;
+		}
+		.top_phone {
+			text-align: center;
+		}
+		.tab {
+			margin-bottom: 0;
+		}
+	}
+	.top_header {
+	    margin-top: 40px;
+		text-align: center;
+	    h1 {
+			font-size: 50px;	
+		}
+	    h2 {
+	        margin-top: 10px;
+	        font-size: 30px;
+	    }
+	}
+	.s_review h2 {
+		font-size: 40px;
+		line-height: 1;
+	}
+	.s_back h3 {
+			font-size: 20px;
+			line-height: 1.2;
+	}
+	.contacts_top {
+		h2 {
+			font-size: 40px;
+		}
+
+	    .tab {
+	        display: block;
+	        float: none;
+
+	        &:first-child {
+	            border-radius: 3px 3px 0 0;
+	        }
+
+	        &:last-child {
+	            border-radius: 0 0 3px 3px;
+	        } 
+	    }
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	.top_header {
+	    margin-top: 20px;
+		text-align: center;
+	    h1 {
+			font-size: 50px;
+			line-height: 1.2;	
+		}
+	    h2 {
+	        margin-top: 10px;
+	        font-size: 30px;
+	    }
+	}
+	.tabs_header {
+		.tab_content {
+	        padding: 15px;
+	        font-size: 16px;
+	        line-height: 1.4;
+	        max-width: 635px;
+	    }
+	}
+	.tizers {
+		.tizer {
+			float: none;
+			width: 100%;
+		}
+	}
+	.s_profi h2 {
+			font-size: 40px;
+			line-height: 1;
+	}
+	footer h2 {
+		font-size: 40px;
+		line-height: 1;
+	}
+}
+
+@media only screen and (max-width : 420px) {
+	.top_header {
+	    margin-top: 20px;
+		text-align: center;
+	    h1 {
+			font-size: 40px;
+			line-height: 1.2;	
+		}
+	    h2 {
+	        margin-top: 10px;
+	        font-size: 25px;
+	    }
+	}
+	footer {
+		.tab_item {
+			font-size: 30px;
+		}
+	}
+}
+
+@media only screen and (max-width : 360px) {
+	.top_line {
+		.tab_item {
+			font-size: 25px;
+		}
+	}
+}

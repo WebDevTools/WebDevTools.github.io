@@ -1,0 +1,31 @@
+@mixin clearfix() {
+	&:before,
+	&:after {
+	  content: " ";
+	  display: table;
+	}
+
+	&:after {
+	  clear: both;
+	}
+}
+
+@mixin button {
+	font-size: 20px;
+	color: #fff;
+	font-family: "BebasBold";
+	height: 50px;
+	line-height: 50px;
+	box-sizing: border-box;
+	display: block;
+	background-color: #d12f22;
+	border-bottom: 3px solid #ac160a;
+
+	&:hover {
+		background-color: #eb3426;
+	}
+
+	&:active {
+		background-color: #a9251b;
+	}
+}

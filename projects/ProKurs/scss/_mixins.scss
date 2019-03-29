@@ -1,0 +1,35 @@
+@mixin clearfix() {
+   &:before,
+   &:after {
+      content: " ";
+      display: table;
+   }
+
+   &:after {
+      clear: both;
+   }
+}
+
+//Button
+@mixin button {
+   font-family: "RobotoBold", sans-serif;
+   color: #fff;
+   font-size: 18px;
+   text-transform: uppercase;
+
+   border-radius: 3px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   display: inline-block;
+   padding: 16px 0;
+   width: 218px;
+}
+
+@mixin linear-gradient {
+	background: #c6d8ee;
+	background: -moz-linear-gradient(top, #c6d8ee 0%, #e8eff7 100%);
+	background: -webkit-linear-gradient(top, #c6d8ee 0%,#e8eff7 100%);
+	background: linear-gradient(to bottom, #c6d8ee 0%,#e8eff7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6d8ee', endColorstr='#e8eff7',GradientType=0 );
+}

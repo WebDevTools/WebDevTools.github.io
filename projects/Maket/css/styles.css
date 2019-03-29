@@ -1,0 +1,443 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-size: 100%;
+}
+a {
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;
+} 
+input, select, button, textarea {
+	margin: 0;
+	font-size: 100%; 			
+	outline: none;
+}
+input[type="password"], textarea {
+	padding: 0;
+}
+input[type="checkbox"] {
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+nav ul {
+	 list-style: none;
+}
+/* --------------- /reset.css --------------- */
+
+html {
+	background: #436b00 url(../images/bg.jpg) top repeat-x;
+}
+
+body {
+	background: url(../images/stars.png) 48.8% top no-repeat;
+	font-family: bonvenocf;
+	color: #fff;
+	text-shadow: 1px 1px 2px rgba(35, 31, 32, .5);
+}
+
+img {
+	border: none;
+}
+
+.clr {
+	clear: both;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.menu {
+	background: url(../images/menu_bg.png) right center no-repeat;
+	float: right;
+	line-height: 1.3;
+	margin: 10px 10px 0 413px;
+	padding: 10px 15px 10px 0;
+    position: relative;
+	z-index: 100;
+	width: 522px;
+}
+
+.menu ul {
+	float: right;
+	list-style: none;
+	margin: 1px -1px 0 0;
+}
+
+.menu p span {
+	float: left;
+	font-size: 8px;
+	color: #d6d6d6;
+	margin: 2px 6px 0 141px;
+}
+
+.menu li {
+	float: left;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 0 0 0 24px;
+}
+
+.menu li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu li a.active {
+	color: #ffd200;
+}
+
+.menu li a:hover {
+	color: #ffd200;
+}
+
+.home {
+	overflow: hidden;
+	width: 100%;
+	margin: 0 0 145px 0;
+}
+
+.logo {
+	float: left;
+	margin: 106px 0 0 -15px;
+}
+
+.rocket {
+	position: absolute;
+	right: 55px;
+	top: 122px;
+}
+
+.welcome {
+	background: url(../images/welcome_bg.png)left 30px no-repeat;
+	margin: 128px 0 0 79px;
+	width: 500px;
+	padding: 0 0 65px 0;
+}
+
+.welcome h1 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #ffd200;
+	text-transform: uppercase;
+	margin: 0 0 24px 0;
+}
+
+.welcome p {
+	font-size: 11px;
+	line-height: 1.5;
+	padding: 0 0 0 24px;
+	text-align: justify;
+}
+
+.network {
+	background: url(../images/network_bg.png) no-repeat right bottom;
+	float: right;
+	padding: 0 0 10px 0;
+	margin: -152px 66px 0 0;
+}
+
+.network h2 {
+	font-size: 14px;
+	font-weight: normal;
+	color: #ffd200;
+	text-transform: uppercase;
+	margin: 0 0 10px 0;
+	position: relative;
+	left: -25px;
+}
+
+.network p {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	font-size: 12px;
+	padding: 5px 0 5px 0;
+}
+
+.network p img {
+	margin: 0 10px 0 0;
+	vertical-align: middle;
+}
+
+.about-main {
+	background: url(../images/clouds_about_us.png) 30px 224px no-repeat;
+	position: relative;
+	padding: 0 0 30px 0;
+}
+
+.baloon {
+	position: absolute;
+	top: 102px;
+	left: 33px;
+}
+
+.about-us {
+	background: url(../images/about_us.png) left bottom no-repeat;
+	float: right;
+	margin: 327px 59px 0 0;
+	height: 237px;
+	width: 500px;
+	padding: 0 15px 42px 0;
+}
+
+.about-us h1 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #ffd200;
+	text-transform: uppercase;
+	margin: -6px 0 14px 3px;
+}
+
+.about-us p {
+	font-size: 11px;
+	line-height: 1.6;
+	padding: 0 0 0 23px;
+	text-align: justify;
+}
+
+.tabs {
+	float: right;
+	list-style: none;
+	margin: 21px 91px 10px 0;
+}
+
+.tabs li {
+	float: left;
+	font-size: 12px;
+	margin-left: 39px;
+}
+
+.tabs li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 0 0 0;
+}
+
+.tabs li a:hover {
+	color: #ffd200;
+}
+
+.tabs li a.now {
+	color: #ffd200;
+	background: url(../images/about_link_bg.png) center top no-repeat;
+}
+
+#about_us_2,
+#about_us_3 {
+	display: none;
+}
+
+.portfolio-main {
+	background: url(../images/clouds_portfolio_2.png) 0 537px no-repeat;
+}
+
+.portfolio-main-in {
+	background: url(../images/clouds_portfolio_1.png) 734px 132px no-repeat;
+	padding: 145px 0 75px 0;
+	overflow: hidden;
+}
+
+.portfolio {
+	background: url(../images/portfolio_bg.png) 5px 16px no-repeat;
+}
+
+.portfolio h1 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #014f86;
+	text-transform: uppercase;
+	margin: 28px 0 20px 8px;
+}
+
+.portfolio p {
+	padding: 0 0 20px 20px;
+}
+
+.findia {
+	background: url(../images/find_us_at_bg.png) right bottom no-repeat;
+	color: #014f86;
+	font-size: 12px;
+	float: right;
+	padding: 26px 13px 13px 10px;
+	margin: 30px 70px 0 0;
+	text-transform: uppercase;
+}
+
+.findia p {
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+
+.findia img {
+	margin: 0 0 0 5px;
+	position: relative;
+	top: 3px;
+}
+
+.contact-main {
+	background: url(../images/contact_bg.png) 135px 0 no-repeat;
+	margin: -42px 0 0 0;
+	padding: 400px 0 155px 225px;
+	position: relative;
+}
+
+.contact {
+	background: url(../images/contact_form_bg.png) left bottom no-repeat;
+	padding: 0 0 0 0;
+}
+
+.contact h1 {
+	font-size: 18px;
+	font-weight: normal;
+	margin: 0 0 14px 3px;
+	text-transform: uppercase;
+}
+
+.contact-form {
+	padding: 0 20px 30px 28px;
+}
+
+.input-main {
+	margin: 0 0 1px 0;
+	overflow: hidden;
+}
+
+.input-main div {
+	background: url(../images/name_email_bg.png) no-repeat;
+	float: left;
+	height: 30px;
+	width: 276px;
+	padding: 7px 0 0 10px;
+}
+
+.input-main div input {
+	border: none;
+	background: 0;
+	color: #b0d534;
+	font-size: 12px;
+	padding: 0 0 0 5px;
+	width: 255px;
+}
+
+.input-main p {
+	font-size: 11px;
+	float: left;
+	margin: 11px 0 0 13px;
+}
+
+.txtarea {
+	overflow: hidden;
+	position: relative;
+}
+
+.txtarea div {
+	background: url(../images/comment_bg.png);
+	float: left;
+	height: 156px;
+	width: 288px;
+}
+
+.txtarea div textarea {
+	background: none;
+	border: none;
+	color: #b0d534;
+	font-size: 12px;
+	overflow: auto;
+	padding: 10px 0 0 12px;
+	resize: none;
+	height: 142px;
+	width: 263px;
+}
+
+.txtarea p {
+	font-size: 11px;
+	float: left;
+	margin: 4px 0 0 12px;
+}
+
+.txtarea input {
+	position: absolute;
+	bottom: 0;
+	right: 277px;
+}
+
+.contact-tree-left {
+	background: url(../images/tree_left.png);
+	position: absolute;
+	top: 416px;
+	left: 8px;
+	height: 193px;
+	width: 162px;
+}
+
+.contact-tree-right {
+	background: url(../images/tree_right.png);
+	position: absolute;
+	bottom: 2px;
+	right: 74px;
+	height: 267px;
+	width: 167px;
+}
+
+.footer {
+	font-size: 11px;
+	margin: 15px 0 0 31px;
+}
+
+.footer span {
+	color: #ffcc00;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sana-serif;
+}
+
+.sticky {
+	position: fixed;
+	top: 15px;
+	
+	animation:thedrop 1s 1;
+	-moz-animation:thedrop 1s 1;
+	-webkit-animation:thedrop 1s 1;
+}
+
+.sticky .nav-above {
+	position: absolute;
+	top:-15px;
+	left:1em;
+	right:1em;
+	height:15px;
+	background: linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 80%);
+	background: -webkit-linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+	background: -moz-linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}

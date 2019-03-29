@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'bonvenocf';
+    src: url('../fonts/bonvenocf/bonvenocf-light.eot');
+    src: url('../fonts/bonvenocf/bonvenocf-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bonvenocf/bonvenocf-light.woff2') format('woff2'),
+         url('../fonts/bonvenocf/bonvenocf-light.woff') format('woff'),
+         url('../fonts/bonvenocf/bonvenocf-light.ttf') format('truetype'),
+         url('../fonts/bonvenocf/bonvenocf-light.svg#bonvenocflight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
