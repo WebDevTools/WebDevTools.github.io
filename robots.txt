@@ -1,6 +1,4 @@
-Host: https://webdevtools.github.io
-
 User-agent:*
 Disallow: /projects
-
 Sitemap: https://webdevtools.github.io/sitemap.xml
+Host: webdevtools.github.io
