@@ -1,0 +1,194 @@
+@import "_reset";
+
+body {
+	font-family: 'Roboto', sans-serif;
+ 	font-size: 16px;
+
+ 	background: #eee;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.border {
+	border: 1px solid #000;
+}
+
+// Header =================================
+
+.header {
+	min-height: 80px;
+	padding: 10px;
+
+	.logo {
+		float: left;
+		width: 20%;
+
+		p {
+			font-size: 36px;
+			line-height: 80px;
+			padding-left: 20px;
+		}
+	}
+
+	.header-title {
+		float: left;
+		width: 50%;
+		margin-top: 23px;
+	}
+
+	.contacts {
+		float: left;
+		width: 30%;
+		margin-top: 23px;
+	}
+}
+
+// Nav =================================
+
+.nav {
+	padding: 10px;
+	margin-top: 5px;
+
+	li {
+		display: inline-block;;
+	}
+
+	a {
+		display: block;
+		text-decoration: none;
+		color: #000;
+		font-size: 24px;
+		padding: 15px 25px;
+	}
+}
+
+// Main-block =================================
+
+.main-block {
+	padding: 10px;
+	margin-top: 5px;
+
+	.block-left {
+		float: left;
+		width: 40%;
+
+		h3 {
+			font-size: 20px;
+			padding: 15px 0;
+		}
+
+		li {
+			padding-bottom: 15px;
+		}
+	}
+
+	.block-right {
+		float: right;
+		width: 50%;
+
+		img {
+			display: block;
+			margin: 15px 0;
+		}
+	}
+}
+
+// Title =================================
+
+.title {
+	padding: 10px;
+	margin-top: 5px;
+
+	h3 {
+		text-align: center;
+		font-size: 20px;
+		padding: 20px 0;
+	}
+
+	.block-left {
+		float: left;
+		width: 45%;
+		margin-top: 5px;
+	}
+
+	.block-right {
+		float: right;
+		width: 45%;
+		margin-top: 5px;
+	}
+
+	p {
+		margin-bottom: 10px;
+	}
+}
+
+// Video =================================
+
+.video {
+	padding: 10px;
+	margin-top: 5px;
+
+	h3 {
+		text-align: center;
+		font-size: 20px;
+		padding: 20px 0;
+	}
+
+	iframe {
+		width: 980px;
+		height: 600px;
+	}
+}
+
+// Equipment =================================
+
+.equipment {
+	padding: 10px;
+	margin-top: 5px;
+
+	h3 {
+		text-align: center;
+		font-size: 20px;
+		padding: 20px 0;
+	}
+
+	p {
+		width: 50%;
+		font-size: 20px;
+		text-align: center;
+		line-height: 200px;
+	}
+
+	img {
+		width: 50%;
+	}
+
+	.left {
+		float: left;
+	}
+
+	.right {
+		float: right;
+	}
+}
