@@ -50,7 +50,7 @@ header {
 	h1 {
 		font-size: 52px;
 		color: $white;
-		text-shadow: 1px 1px 4px $black;
+		text-shadow: 1px 1px 4px $text-2;
 		text-align: center;
 		text-transform: uppercase;
 		margin-top: 50px;
@@ -105,7 +105,7 @@ header {
 	h2 {
 		font-size: 70px;
 		color: $white;
-		text-shadow: 1px 1px 8px $black;
+		text-shadow: 1px 1px 8px $text-2;
 		text-align: center;
 		text-transform: uppercase;
 		letter-spacing: 2px;
@@ -180,7 +180,7 @@ header {
 	h3 {
 		font-size: 50px;
 		color: $blue;
-		text-shadow: 1px 1px 2px $black;
+		text-shadow: 1px 1px 2px $text-2;
 		text-align: center;
 		text-transform: uppercase;
 		margin-bottom: 50px;
@@ -223,6 +223,19 @@ header {
 	}
 }
 
+
+// Slider =================================
+
+.slider {
+	background: $blue-2;
+
+	.carousel-3d {
+		padding: 50px 0 30px;
+	}
+}
+
+
+@import "_slider";
 
 
 

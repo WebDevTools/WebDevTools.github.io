@@ -67,7 +67,7 @@ header {
   header h1 {
     font-size: 52px;
     color: #fff;
-    text-shadow: 1px 1px 4px #000;
+    text-shadow: 1px 1px 4px #08090a;
     text-align: center;
     text-transform: uppercase;
     margin-top: 50px;
@@ -108,7 +108,7 @@ header {
   header h2 {
     font-size: 70px;
     color: #fff;
-    text-shadow: 1px 1px 8px #000;
+    text-shadow: 1px 1px 8px #08090a;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -159,7 +159,7 @@ header {
   .description h3 {
     font-size: 50px;
     color: #3ca7d9;
-    text-shadow: 1px 1px 2px #000;
+    text-shadow: 1px 1px 2px #08090a;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 50px;
@@ -187,3 +187,79 @@ header {
     line-height: 1.3; }
     .description p:last-child {
       margin-bottom: 0; }
+
+.slider {
+  background: #3498DB; }
+  .slider .carousel-3d {
+    padding: 50px 0 30px; }
+
+.carousel-3d {
+  padding: 20px;
+  -webkit-perspective: 500px;
+  perspective: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden; }
+
+.carousel-3d > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
+
+.carousel-3d figure {
+  margin: 0;
+  width: 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: -webkit-transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; }
+
+.carousel-3d figure img,
+.carousel-3d figure div {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0; }
+
+.carousel-3d figure div:not(:first-of-type),
+.carousel-3d figure img:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.carousel-3d nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0 0; }
+
+.carousel-3d nav button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 0 5px;
+  cursor: pointer;
+  color: #337AB7;
+  background: #BFE2FF;
+  border: 1px solid #337AB7;
+  padding: 5px 10px;
+  font-weight: bold;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
+
+.carousel-3d nav button:hover {
+  color: #FFF;
+  background: #337AB7; }
