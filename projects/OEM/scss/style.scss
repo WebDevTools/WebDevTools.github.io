@@ -227,7 +227,10 @@ header {
 // Slider =================================
 
 .slider {
-	background: $blue-2;
+	background: #9468c3;
+    background: linear-gradient(to bottom,  #9468c3 0%,#5a77da 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9468c3', endColorstr='#5a77da',GradientType=0 );
+
 
 	.carousel-3d {
 		padding: 50px 0 30px;

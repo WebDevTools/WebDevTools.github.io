@@ -189,7 +189,10 @@ header {
       margin-bottom: 0; }
 
 .slider {
-  background: #3498DB; }
+  background: #9468c3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9468c3), to(#5a77da));
+  background: linear-gradient(to bottom, #9468c3 0%, #5a77da 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9468c3', endColorstr='#5a77da',GradientType=0 ); }
   .slider .carousel-3d {
     padding: 50px 0 30px; }
 
