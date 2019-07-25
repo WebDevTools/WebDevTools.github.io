@@ -173,9 +173,14 @@ header {
 
 
 // Description =================================
+.rewview {
+	background-image: url('../img/bg_paralax_1.jpg');
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+}
 
 .description {
-	margin: 50px 0;
+	padding: 50px 0;
 
 	h3 {
 		font-size: 50px;
@@ -227,14 +232,98 @@ header {
 // Slider =================================
 
 .slider {
+	max-height: 714px;
+
 	background: #9468c3;
     background: linear-gradient(to bottom,  #9468c3 0%,#5a77da 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9468c3', endColorstr='#5a77da',GradientType=0 );
 
 
 	.carousel-3d {
-		padding: 50px 0 30px;
+		padding-top: 50px;
 	}
+}
+
+
+// Advantages =============================
+
+.advantages {
+	background-image: url('../img/bg_paralax_1.jpg');
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+
+	.adv {
+		padding: 50px 0;
+		text-align: center;
+	}
+
+	h3 {
+		font-size: 50px;
+		color: $blue;
+		text-shadow: 1px 1px 2px $text-2;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+		letter-spacing: 2px;
+	}
+
+	.block-1 {
+		display: inline-block;
+		width: 800px;
+		margin-bottom: 50px;
+		text-align: left;
+
+		span {
+			font-weight: bold;
+			color: $white;
+			position: relative;
+			right: 27px;
+		}
+
+		p {
+			font-size: 25px;
+			color: $text;
+			line-height: 1.3;
+			margin-bottom: 35px;
+			display: inline-block;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&::before {
+				content: '';
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background: #5a77da;
+				float: left;
+				margin: -4px 0 0 0;
+			}
+		}	
+	}
+
+	.big {
+		font-size: 40px;
+		text-transform: uppercase;
+		color: $text;
+		font-weight: bold;
+		margin-bottom: 35px;
+	}
+
+	.text {
+		text-transform: uppercase;
+		font-size: 25px;
+		color: $text;
+	}
+}
+
+//============================================
+
+.test {
+	min-height: 600px;
+	background: #5a77da;
 }
 
 

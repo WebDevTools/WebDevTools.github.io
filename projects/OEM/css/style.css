@@ -154,8 +154,13 @@ header {
     header .icon .icon-5 {
       background-position: -300px 0; }
 
+.rewview {
+  background-image: url("../img/bg_paralax_1.jpg");
+  background-repeat: repeat-x;
+  background-attachment: fixed; }
+
 .description {
-  margin: 50px 0; }
+  padding: 50px 0; }
   .description h3 {
     font-size: 50px;
     color: #3ca7d9;
@@ -189,12 +194,70 @@ header {
       margin-bottom: 0; }
 
 .slider {
+  max-height: 714px;
   background: #9468c3;
   background: -webkit-gradient(linear, left top, left bottom, from(#9468c3), to(#5a77da));
   background: linear-gradient(to bottom, #9468c3 0%, #5a77da 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9468c3', endColorstr='#5a77da',GradientType=0 ); }
   .slider .carousel-3d {
-    padding: 50px 0 30px; }
+    padding-top: 50px; }
+
+.advantages {
+  background-image: url("../img/bg_paralax_1.jpg");
+  background-repeat: repeat-x;
+  background-attachment: fixed; }
+  .advantages .adv {
+    padding: 50px 0;
+    text-align: center; }
+  .advantages h3 {
+    font-size: 50px;
+    color: #3ca7d9;
+    text-shadow: 1px 1px 2px #08090a;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    letter-spacing: 2px; }
+  .advantages .block-1 {
+    display: inline-block;
+    width: 800px;
+    margin-bottom: 50px;
+    text-align: left; }
+    .advantages .block-1 span {
+      font-weight: bold;
+      color: #fff;
+      position: relative;
+      right: 27px; }
+    .advantages .block-1 p {
+      font-size: 25px;
+      color: #535353;
+      line-height: 1.3;
+      margin-bottom: 35px;
+      display: inline-block; }
+      .advantages .block-1 p:last-child {
+        margin-bottom: 0; }
+      .advantages .block-1 p::before {
+        content: '';
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #5a77da;
+        float: left;
+        margin: -4px 0 0 0; }
+  .advantages .big {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #535353;
+    font-weight: bold;
+    margin-bottom: 35px; }
+  .advantages .text {
+    text-transform: uppercase;
+    font-size: 25px;
+    color: #535353; }
+
+.test {
+  min-height: 600px;
+  background: #5a77da; }
 
 .carousel-3d {
   padding: 20px;

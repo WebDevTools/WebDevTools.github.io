@@ -1,3 +1,10 @@
+//Stellar
+
+$.stellar({
+    responsive: true
+});
+
+
 // Slider
 
 window.addEventListener("load", () => {
