@@ -4,8 +4,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
  	font-size: 16px;
-
- 	background: #eee;
 }
 
 *, *:before, *:after {
@@ -58,8 +56,9 @@ header {
 		letter-spacing: 2px;
 
 		span {
-			color: $red;
+			color: $red2;
 			font-size: 70px;
+			text-shadow: 1px 1px 10px $white;
 		}
 	}
 
@@ -86,7 +85,7 @@ header {
 				height: 0;
 				border-style: solid;
 				border-width: 9px 0 9px 16px;
-				border-color: transparent transparent transparent $red;
+				border-color: transparent transparent transparent $red2;
 				margin-right: 7px;
 			}
 		}
@@ -141,7 +140,7 @@ header {
 				display: block;
 				width: 100%;
 				height: 5px;
-				background-color: $red;
+				background-color: $red2;
 				margin: 8px 0;
 			}
 		}
@@ -241,6 +240,60 @@ header {
 
 	.carousel-3d {
 		padding-top: 50px;
+	}
+}
+
+
+// Specifications =========================
+
+.specifications {
+	border-top: 2px solid $red2;
+	border-bottom: 2px solid $red2;
+	background: $bg;
+
+	.specific {
+		padding: 50px 15px;
+	}
+
+	.block-left {
+		width: 44%;	
+		float: left;
+		margin-left: 110px;
+	}
+
+	.block-right {
+		width: 44%;
+		float: left;
+		margin-left: 25px;
+	}
+
+	h3 {
+		font-size: 34px;
+		margin-bottom: 30px;
+		color: $text;
+	}
+
+	p {
+		font-size: 21px;
+	    color: $text;
+	    margin-bottom: 20px;
+
+	    &:last-child {
+			margin-bottom: 0;
+		}
+
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 9px 0 9px 16px;
+			border-color: transparent transparent transparent $red2;
+			margin-right: 7px;
+			position: relative;
+			top: 1px;
+		}
 	}
 }
 
