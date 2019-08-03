@@ -195,7 +195,7 @@ header {
     padding: 0 15px; }
   header .price {
     position: absolute;
-    left: 77px;
+    left: 38px;
     bottom: 306px;
     font-size: 50px;
     text-shadow: 1px 1px 10px #08090a;
@@ -208,7 +208,7 @@ header {
       font-weight: bold; }
   header .button {
     position: absolute;
-    left: 140px;
+    left: 96px;
     bottom: 126px; }
     header .button:active {
       bottom: 124px; }
