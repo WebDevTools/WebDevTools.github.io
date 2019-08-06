@@ -1,0 +1,33 @@
+@media only screen and (max-width : 1024px) {
+	header {
+
+		h1 {
+			font-size: 45px;
+			line-height: 1.1;
+		}
+
+		.arrow {
+			top: 270px;
+			left: 680px;
+		}
+
+		.free {
+			right: 660px;
+			bottom: 3%;
+			padding: 15px 28px;
+
+			p {
+				font-size: 21px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width : 1000px) {
+	header {
+
+		.header {
+			
+		}
+	}
+}

@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
 
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .6);
 
     position: fixed;
     top: 0;
@@ -92,13 +92,21 @@
         border: 0;
         letter-spacing: 1px;
         cursor: pointer;
-        border-bottom: 4px solid #AA2200;
+        border-bottom: 4px solid $red3;
         box-shadow: 0 7px 10px $text;
 
         &:active {
-            border-bottom: 2px solid #AA2200;
+            border-bottom: 2px solid $red3;
             box-shadow: 0 3px 7px $text-2;
             bottom: 23px;
         }
+    }
+
+    .btn-inactive {
+        background: $red3;
+        color: $bg2;
+        border-bottom: 2px solid $red3;
+        box-shadow: 0 3px 7px $text-2;
+        bottom: 23px;
     }
 }

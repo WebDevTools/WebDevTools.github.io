@@ -6,11 +6,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
  	font-size: 16px;
-
- 	// &.open-modal {
- 	// 	overflow-y: hidden;
- 	// }
-
  	position: relative;
 }
 
@@ -44,14 +39,15 @@ body {
 // Header =================================
 
 header {
-	background: url("../img/bgheader.jpg") center;
+	background: url("../img/bgheader.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
 	background-size: cover;
 	height: 100vh;
 
 	.header {
-		position: relative;
-		height: 100vh;
-		padding: 0 15px;
+		// height: 100vh;
+		padding: 50px 15px;
 	}
 
 	h1 {
@@ -60,7 +56,6 @@ header {
 		text-shadow: 1px 1px 6px $text-2;
 		text-align: center;
 		text-transform: uppercase;
-		margin-top: 50px;
 		line-height: 1.3;
 		letter-spacing: 2px;
 
@@ -77,6 +72,18 @@ header {
 		padding: 17px;
 		border-radius: 15px;
 		margin-top: 35px;
+		position: relative;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 163px;
+			height: 81px;
+			background: url("../img/arrow.png");
+			position: absolute;
+			bottom: 0;
+			right: -180px;
+		}
 
 		li {
 			font-size: 27px;
@@ -100,16 +107,6 @@ header {
 		}
 	}
 
-	.arrow {
-		display: block;
-		width: 163px;
-		height: 81px;
-		background: url("../img/arrow.png");
-		position: absolute;
-		top: 315px;
-		left: 680px;
-	}
-
 	h2 {
 		font-size: 62px;
 		color: $white;
@@ -120,59 +117,63 @@ header {
 		margin: 50px 0;
 	}
 
-	.price {
-		position: absolute;
-		left: 29px;
-		bottom: 184px;
-		font-size: 35px;
-		text-shadow: 1px 1px 10px $text-2;
-		color: $white;
-		letter-spacing: 2px;
-
-		span {
-			color: $red2;
-			font-size: 54px;
-			text-shadow: 1px 1px 10px $white;
-			font-weight: bold;	
-		}
+	.block-bottom {
+		padding-top: 138px;
 	}
 
-	.button {
-		position: absolute;
-		left: 22px;
-		bottom: 88px;
+	.bottom-left {
+		float: left;
+		text-align: center;
+		position: relative;
+		bottom: 14px;
 
-		&:active {
-			bottom: 124px;
+		.price {
+			font-size: 35px;
+			text-shadow: 1px 1px 10px $text-2;
+			color: $white;
+			letter-spacing: 2px;
+
+			span {
+				color: $red2;
+				font-size: 54px;
+				text-shadow: 1px 1px 10px $white;
+				font-weight: bold;	
+			}
 		}
 
-		a {
-			@include button;
+		.free {
+			display: inline-block;
+			background: rgba(255,255,255,.5);
+			padding: 16px 20px;
+			border-radius: 15px;
+			border: 1px solid $red2;
+			margin: 10px 0;
+
+			p {
+				color: $red2;
+				font-size: 22px;
+				text-transform: uppercase;
+				font-weight: bold;
+				letter-spacing: 1px;
+			}
 		}
-	}
 
-	.free {
-		position: absolute;
-		right: 0;
-		bottom: 245px;
-		background: rgba(255,255,255,.5);
-		padding: 20px 43px;
-		border-radius: 15px;
+		.button {
+			position: relative;
+		
+			&:active {
+				top: 2px;
+			}
 
-		p {
-			color: $red2;
-			font-size: 44px;
-			text-transform: uppercase;
-			font-weight: bold;
-			letter-spacing: 1px;
+			a {
+				@include button;
+			}
 		}
 	}
 
 	.icon {
+		float: right;
 		display: inline-block;
-		position: absolute;
-		right: 0;
-		bottom: 3%;
 		background: rgba(255,255,255,.4);
 		padding: 14px;
 		border-radius: 15px;
@@ -237,23 +238,18 @@ header {
 }
 
 .description {
-	padding: 50px 0;
+	padding: 50px 15px;
 
 	h3 {
-		font-size: 50px;
-		color: $blue;
-		text-shadow: 1px 1px 2px $text-2;
-		text-align: center;
-		text-transform: uppercase;
+		@include h3;
 		margin-bottom: 50px;
-		letter-spacing: 2px;
 	}
 
 	.block_1 {
 		float: left;
 		display: inline-block;
 		width: 39%;
-		padding: 0 15px 0 95px;
+		padding: 0 15px 0 80px;
 	}
 
 	.img {
@@ -269,7 +265,7 @@ header {
 		float: right;
 		display: inline-block;
 		width: 39%;
-		padding: 0 95px 0 15px;
+		padding: 0 80px 0 15px;
 		text-align: right;
 	}
 
@@ -316,13 +312,13 @@ header {
 	.block-left {
 		width: 44%;	
 		float: left;
-		margin-left: 110px;
+		margin-left: 6%;
 	}
 
 	.block-right {
 		width: 44%;
-		float: left;
-		margin-left: 25px;
+		float: right;
+		margin-left: 6%;
 	}
 
 	h3 {
@@ -365,17 +361,12 @@ header {
 	border-top: 1px solid $red2;
 
 	.steps {
-		padding: 50px 0;
+		padding: 50px 15px;
 		position: relative;
 	}
 
 	h3 {
-		font-size: 50px;
-		color: $blue;
-		text-shadow: 1px 1px 2px $text-2;
-		text-align: center;
-		text-transform: uppercase;
-		letter-spacing: 2px;
+		@include h3;
 	}
 
 	.block-1,
@@ -389,22 +380,22 @@ header {
 	}
 
 	.block-1 {
-		left: 124px;
+		left: 39px;
 		bottom: 161px;
 	}
 
 	.block-2 {
-		left: 358px;
+		left: 273px;
 		bottom: 231px;
 	}
 
 	.block-3 {
-		left: 592px;
+		left: 507px;
 		bottom: 301px;
 	}
 
 	.block-4 {
-		left: 826px;
+		left: 741px;
 		bottom: 371px;
 	}
 
@@ -496,19 +487,14 @@ header {
 	border-top: 1px solid $red2;
 
 	.adv {
-		padding: 50px 0 170px;
+		padding: 50px 15px 170px;
 		text-align: center;
 		position: relative;
 	}
 
 	h3 {
-		font-size: 50px;
-		color: $blue;
-		text-shadow: 1px 1px 2px $text-2;
-		text-align: center;
-		text-transform: uppercase;
+		@include h3;
 		margin-bottom: 50px;
-		letter-spacing: 2px;
 	}
 
 	.block-1 {
@@ -584,7 +570,6 @@ header {
 footer {
 	text-align: center;
 	background: #5a77da;
-	// background: #212122;
 	border-top: 1px solid $red2; 
 
 	p {
@@ -595,6 +580,7 @@ footer {
 
 
 @import "_slider";
+@import "_media";
 
 
 

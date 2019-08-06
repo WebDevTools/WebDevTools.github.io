@@ -8,8 +8,10 @@ jQuery(document).ready(function($) {
     $('#check').on('click', function() {
         if ($("#check").prop("checked")) {
             $('#button').attr('disabled', false);
+            $("#button").removeClass("btn-inactive");
         } else {
             $('#button').attr('disabled', true);
+            $("#button").addClass("btn-inactive");
         }
     });
 
