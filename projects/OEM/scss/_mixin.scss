@@ -4,7 +4,8 @@
 	text-transform: uppercase;
 	color: $white;
 	font-size: 35px;
-	padding: 23px 60px;
+	padding: 23px 0;
+	width: 100%;
 	background: $red2;
 	border-radius: 15px;
 	text-shadow: 1px 1px 1px $text-2;
@@ -27,4 +28,5 @@
 	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	line-height: 1.2;
 }

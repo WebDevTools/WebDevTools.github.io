@@ -1,8 +1,17 @@
 @media only screen and (max-width : 1024px) {
 	header {
 
+		.header {
+			padding: 30px 15px 0;
+		}
+
 		h1 {
 			font-size: 45px;
+			line-height: 1.1;
+		}
+
+		h2 {
+			font-size: 50px;
 			line-height: 1.1;
 		}
 
@@ -11,23 +20,313 @@
 			left: 680px;
 		}
 
-		.free {
-			right: 660px;
-			bottom: 3%;
-			padding: 15px 28px;
-
-			p {
-				font-size: 21px;
-			}
+		.block-bottom {
+			padding-top: 10px;
 		}
 	}
 }
 
-@media only screen and (max-width : 1000px) {
+@media only screen and (max-width : 1010px) {
 	header {
 
-		.header {
+		.block-bottom {
+			text-align: center;
+		}
+
+		.bottom-left {
+			float: none;
+		}
+
+		.icon {
+			float: none;
+		}
+	}
+}
+
+@media only screen and (max-width : 900px) {
+	header {
+		text-align: center;
+
+		ul {
 			
+
+			&::after {
+				display: none;
+			}
+		}
+	}
+
+	.description {
+		padding: 30px 15px;
+
+		h3 {
+			font-size: 40px;
+			margin-bottom: 30px;
+		}
+
+		.block_1,
+		.block_2 {
+			padding: 0 15px 0 15px;
+		}
+	}
+
+	.advantages {
+
+		.adv {
+			padding: 30px 15px;
+		}
+
+		h3 {
+			font-size: 40px;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media only screen and (max-width : 840px) {
+	header {
+
+		h1 {
+			font-size: 37px;
+
+			span {
+				font-size: 50px;
+			}
+		}
+
+		h2 {
+			font-size: 43px;
+			margin: 30px 0;
+		}
+	}
+
+	.slider {
+
+		.carousel-3d {
+			display: none;
+		}
+
+		.photos {
+			display: block;
+		}
+	}
+}
+
+@media only screen and (max-width : 760px) {
+	.description {
+
+		.img {
+			display: none;
+		}
+
+		.block_1,
+		.block_2 {
+			float: none;
+			display: block;
+			width: 100%;
+			padding: 0;
+			text-align: justify;
+		}
+
+		.block_1 {
+			margin-bottom: 20px;
+		}
+
+		p {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media only screen and (max-width : 710px) {
+	header {
+
+		h1 {
+			font-size: 35px;
+		}
+
+		h2 {
+			font-size: 40px;
+			margin: 20px 0;
+		}
+	}
+}
+
+@media only screen and (max-width : 680px) {
+	header {
+		height: 100%;
+
+		.header {
+			height: 100%;
+		}
+
+		.bottom-left {
+			margin-top: 30px;
+		}
+
+		.icon {
+			display: none;
+		}
+	}
+
+	.specifications {
+		text-align: center;
+
+		.specific {
+			padding: 20px 15px;
+		}
+
+		.block-left {
+			margin-bottom: 30px;
+		}
+
+		.block-left,
+		.block-right {
+			width: 400px;
+			display: inline-block;	
+			float: none;
+			margin-left: 0;
+			text-align: left;
+		}
+
+		h3 {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media only screen and (max-width : 500px) {
+	.description {
+		padding: 20px 15px;
+
+		h3 {
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.slider {
+
+		.photos {
+
+			.foto {
+				margin: 5px 15px;
+			}
+		}
+	}
+
+	.advantages {
+
+		.adv {
+			padding: 20px 15px;
+		}
+
+		h3 {
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+
+		.block-1 {
+			margin-bottom: 20px;
+
+			p {
+				font-size: 20px;
+				margin-bottom: 25px;
+			}
+		}
+
+		.big {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media only screen and (max-width : 460px) {
+	.modal {
+		width: 290px;
+    	padding: 10px;
+
+    	.form-check {
+
+    		label {
+	            font-size: 12px;
+	        }
+    	}
+	}
+}
+
+@media only screen and (max-width : 440px) {
+	.specifications {
+
+		.block-left,
+		.block-right {
+			width: 280px;
+		}
+	}
+}
+
+@media only screen and (max-width : 416px) {
+	header {
+
+		h1 {
+			font-size: 25px;
+
+			span {
+				font-size: 35px;
+			}
+		}
+
+		h2 {
+			font-size: 35px;
+		}
+
+		.block-bottom {
+			padding-top: 0;
+		}
+
+		.bottom-left {
+			width: 265px;
+
+			.price {
+				font-size: 30px;
+				letter-spacing: 1px;
+
+				span {
+					font-size: 40px;
+				}
+			}
+
+			.free {
+
+				p {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+	.slider {
+
+		.photos {
+
+			.foto {
+				width: 265px
+			}
+		}
+	}
+
+	.advantages {
+
+		.big {
+			font-size: 30px;
+		}
+
+		.text {
+			font-size: 20px;
+		}
+
+		.button {
+			width: 265px;
 		}
 	}
 }
