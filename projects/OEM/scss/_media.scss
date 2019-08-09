@@ -26,8 +26,13 @@
 	}
 }
 
-@media only screen and (max-width : 1010px) {
+@media only screen and (max-width : 1000px) {
 	header {
+		// height: 100%;
+
+		// .header {
+		// 	height: 100%;
+		// }
 
 		.block-bottom {
 			text-align: center;
@@ -39,6 +44,19 @@
 
 		.icon {
 			float: none;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+@media only screen and (max-width : 1015px) {
+	.work {
+
+		.step-1,
+		.step-2,
+		.step-3,
+		.step-4 {
+			display: none;
 		}
 	}
 }
@@ -81,13 +99,28 @@
 			margin-bottom: 30px;
 		}
 	}
+
+	.work {
+
+		.steps {
+			padding: 30px 15px;
+		}
+
+		h3 {
+			font-size: 40px;
+		}
+	}
 }
 
 @media only screen and (max-width : 840px) {
 	header {
+		background: url("../img/bgheader-mobile.jpg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
 
 		h1 {
-			font-size: 37px;
+			font-size: 40px;
 
 			span {
 				font-size: 50px;
@@ -95,7 +128,7 @@
 		}
 
 		h2 {
-			font-size: 43px;
+			font-size: 45px;
 			margin: 30px 0;
 		}
 	}
@@ -108,6 +141,13 @@
 
 		.photos {
 			display: block;
+		}
+	}
+
+	footer {
+
+		p {
+			padding: 20px 0;
 		}
 	}
 }
@@ -142,24 +182,34 @@
 	header {
 
 		h1 {
-			font-size: 35px;
+			font-size: 32px;
+
+			span {
+				font-size: 42px;
+			}
 		}
 
 		h2 {
-			font-size: 40px;
+			font-size: 32px;
 			margin: 20px 0;
+		}
+
+		ul {
+
+			li {
+				font-size: 24px;
+
+				&::before {
+					top: 1px;
+				}
+			}
 		}
 	}
 }
 
 @media only screen and (max-width : 680px) {
 	header {
-		height: 100%;
-
-		.header {
-			height: 100%;
-		}
-
+		
 		.bottom-left {
 			margin-top: 30px;
 		}
@@ -196,6 +246,29 @@
 }
 
 @media only screen and (max-width : 500px) {
+	header {
+
+		.header {
+			padding: 15px 15px 0;
+		}
+
+		ul {
+			margin-top: 15px;
+
+			li {
+				font-size: 22px;
+			}
+		}
+
+		h2 {
+			margin: 10px 0 0;
+		}
+
+		.block-bottom {
+			padding-top: 0;
+		}
+	}
+
 	.description {
 		padding: 20px 15px;
 
@@ -239,6 +312,18 @@
 			margin-bottom: 20px;
 		}
 	}
+
+	.work {
+
+		.steps {
+			padding: 20px 15px;
+		}
+
+		h3 {
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+	}
 }
 
 @media only screen and (max-width : 460px) {
@@ -268,18 +353,6 @@
 @media only screen and (max-width : 416px) {
 	header {
 
-		h1 {
-			font-size: 25px;
-
-			span {
-				font-size: 35px;
-			}
-		}
-
-		h2 {
-			font-size: 35px;
-		}
-
 		.block-bottom {
 			padding-top: 0;
 		}
@@ -292,14 +365,22 @@
 				letter-spacing: 1px;
 
 				span {
-					font-size: 40px;
+					font-size: 35px;
 				}
 			}
 
 			.free {
+				padding: 15px 0;
 
 				p {
-					font-size: 18px;
+					font-size: 17px;
+				}
+			}
+
+			.button {
+
+				a {
+					font-size: 28px;
 				}
 			}
 		}
@@ -327,6 +408,27 @@
 
 		.button {
 			width: 265px;
+
+			a {
+				font-size: 28px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width : 370px) {
+	header {
+
+		h1 {
+			font-size: 28px;
+
+			span {
+				font-size: 30px;
+			}
+		}
+
+		h2 {
+			font-size: 28px;
 		}
 	}
 }
