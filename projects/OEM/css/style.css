@@ -663,13 +663,17 @@ footer {
   header .block-bottom {
     padding-top: 10px; } }
 @media only screen and (max-width: 1000px) {
-  header .block-bottom {
-    text-align: center; }
-  header .bottom-left {
-    float: none; }
-  header .icon {
-    float: none;
-    margin-bottom: 20px; } }
+  header {
+    height: 100%; }
+    header .header {
+      height: 100%; }
+    header .block-bottom {
+      text-align: center; }
+    header .bottom-left {
+      float: none; }
+    header .icon {
+      float: none;
+      margin-bottom: 20px; } }
 @media only screen and (max-width: 1015px) {
   .work .step-1,
   .work .step-2,
@@ -812,6 +816,12 @@ footer {
   .modal {
     width: 290px;
     padding: 10px; }
+    .modal .form-group {
+      margin-bottom: 14px; }
+      .modal .form-group label {
+        display: inline-block;
+        font-size: 18px;
+        margin-bottom: 5px; }
     .modal .form-check label {
       font-size: 12px; } }
 @media only screen and (max-width: 440px) {
