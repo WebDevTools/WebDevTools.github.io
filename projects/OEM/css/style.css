@@ -820,8 +820,10 @@ footer {
       margin-bottom: 14px; }
       .modal .form-group label {
         display: inline-block;
-        font-size: 18px;
-        margin-bottom: 5px; }
+        font-size: 16px;
+        margin-bottom: 2px; }
+      .modal .form-group input {
+        padding: 2px; }
     .modal .form-check label {
       font-size: 12px; } }
 @media only screen and (max-width: 440px) {
