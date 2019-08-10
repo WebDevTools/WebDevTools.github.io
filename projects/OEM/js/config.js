@@ -1,3 +1,18 @@
+//Добавляем стрелку вниз
+    $("header").append('<div class="arrow-up"></div>');
+
+
+//Скрываем стрелку при скроле на 20px
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 20) {
+        $(".arrow-up").addClass("arrow-none");
+    }
+    else{
+        $(".arrow-up").removeClass("arrow-none");
+    }
+});
+
+
 //Modal
 
 $(".js-show-modal").on("click", function(e) {
@@ -15,6 +30,17 @@ $("#js-overlay, .js-modal-close").on("click", function(e) {
     $(".js-modal, #js-overlay").fadeOut(300);
     // $("body").removeClass("open-modal");
 
+});
+
+
+//Slick
+
+$('#multiple-items').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true
 });
 
 

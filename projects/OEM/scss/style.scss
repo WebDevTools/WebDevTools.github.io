@@ -45,10 +45,37 @@ header {
 	background-position: center center;
 	background-size: cover;
 	height: 100vh;
+	position: relative;
 
 	.header {
 		height: 100vh;
 		padding: 50px 15px 0;
+	}
+
+	.arrow-up {
+		// display: none;
+		display: inline-block;
+		width: 24px;
+		height: 46px;
+		background: url("../img/arrow-up.png");
+		position: absolute;
+		right: 3%;
+		bottom: 3%;
+		opacity: 1;
+
+		animation: arrow 3s ease-in-out infinite;
+
+		transition: all ease .5s;
+
+		&.arrow-none {
+			right: -40px;
+		}
+	}
+
+	@keyframes arrow {
+		20% { opacity: 1; }
+		50% { opacity: 0; }
+		80% { opacity: 1; }
 	}
 
 	h1 {
@@ -307,18 +334,32 @@ header {
 
 	.photos {
 		display: none;
-		padding: 30px 0;
+		padding: 30px 15px 40px;
 		text-align: center;
 
 		.foto {
-			width: 350px;
 			display: inline-block;
-			margin: 5px 5px;
 		}
 
+		// .wrap {
+		// 	position: relative;
+		//padding-top: 80%;
+		// }
+
+		// img {
+		// 	display: inline-block;
+		// 	position: absolute;
+		// 	left: 0;
+		// 	top: 0;
+		// 	width: 100%;
+		// 	height: auto;
+		// }
+
 		img {
-			width: 100%;
-			display: block;
+			display: inline-block;
+			height: auto;
+  			width: 100%;
+  			max-width: 560px;
 		}
 	}
 }
@@ -598,6 +639,7 @@ footer {
 
 
 @import "_slider";
+@import "_slick";
 @import "_media";
 
 

@@ -1,0 +1,217 @@
+/* Slider */
+
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+}
+.slick-slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    
+    img {
+        display: block;
+    }
+    &.slick-loading img {
+        display: none;
+    }
+
+    display: none;
+
+    &.dragging img {
+        pointer-events: none;
+    }
+
+    .slick-initialized & {
+        display: block;
+    }
+
+    .slick-loading & {
+        visibility: hidden;
+    }
+
+    .slick-vertical & {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+
+//-----------------------------
+
+@charset "UTF-8";
+
+// Default Variables
+
+// Slick icon entity codes outputs the following
+// "\2190" outputs ascii character "←"
+// "\2192" outputs ascii character "→"
+// "\2022" outputs ascii character "•"
+
+$slick-font-path: "./fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "./" !default;
+$slick-arrow-color: white !default;
+$slick-dot-color: black !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "\2190" !default;
+$slick-next-character: "\2192" !default;
+$slick-dot-character: "\2022" !default;
+$slick-dot-size: 6px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+@function slick-image-url($url) {
+    @if function-exists(image-url) {
+        @return image-url($url);
+    }
+    @else {
+        @return url($slick-loader-path + $url);
+    }
+}
+
+@function slick-font-url($url) {
+    @if function-exists(font-url) {
+        @return font-url($url);
+    }
+    @else {
+        @return url($slick-font-path + $url);
+    }
+}
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+    border: 0;
+    color: transparent;
+    font-size: 0;
+    cursor: pointer;
+
+    width: 26px;
+    height: 48px;
+    background: url("../img/arrows-2.png");
+
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    z-index: 1;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.slick-prev {
+    left: 25px;
+}
+
+.slick-next {
+    background-position: -26px 0;
+    right: 25px;
+}
+
+/* Dots */
+
+.slick-dots {
+    display: inline-block;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        position: relative;
+        display: inline-block;
+        margin: 0 10px;
+        padding: 0;
+        cursor: pointer;
+
+        button {
+            width: 10px;
+            height: 10px;
+            background: $bg2;
+            border-radius: 50%;
+            border: 0;
+            padding: 0;
+            opacity: .6;
+
+            font-size: 0;
+            color: transparent;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 1;
+            }
+
+            &:hover, &:focus {
+                outline: none;
+                
+            }
+        }
+
+        &.slick-active button {
+            background: $red2;
+            opacity: 1;
+        }
+    }
+}
