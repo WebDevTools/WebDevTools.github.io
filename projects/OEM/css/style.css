@@ -161,12 +161,12 @@ header {
     right: 3%;
     bottom: 3%;
     opacity: 1;
-    -webkit-animation: arrow 3s ease-in-out infinite;
-            animation: arrow 3s ease-in-out infinite;
+    -webkit-animation: arrow 2s ease-in-out infinite;
+            animation: arrow 2s ease-in-out infinite;
     -webkit-transition: all ease .5s;
     transition: all ease .5s; }
     header .arrow-up.arrow-none {
-      right: -40px; }
+      display: none; }
 @-webkit-keyframes arrow {
   20% {
     opacity: 1; }

@@ -63,12 +63,12 @@ header {
 		bottom: 3%;
 		opacity: 1;
 
-		animation: arrow 3s ease-in-out infinite;
+		animation: arrow 2s ease-in-out infinite;
 
 		transition: all ease .5s;
 
 		&.arrow-none {
-			right: -40px;
+			display: none;
 		}
 	}
 
