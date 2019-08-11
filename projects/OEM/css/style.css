@@ -158,8 +158,8 @@ header {
     height: 46px;
     background: url("../img/arrow-up.png");
     position: absolute;
-    right: 1%;
-    bottom: 17%;
+    right: 3%;
+    bottom: 3%;
     opacity: 1;
     -webkit-animation: arrow 2s ease-in-out infinite;
             animation: arrow 2s ease-in-out infinite;
@@ -977,6 +977,10 @@ footer {
     font-size: 30px;
     margin-bottom: 20px; } }
 @media only screen and (max-width: 460px) {
+  header .arrow-up {
+    right: 2%;
+    bottom: 20%; }
+
   .modal {
     width: 290px;
     padding: 10px; }

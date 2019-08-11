@@ -335,6 +335,14 @@
 }
 
 @media only screen and (max-width : 460px) {
+	header {
+
+		.arrow-up {
+			right: 2%;
+			bottom: 20%;
+		}
+	}
+
 	.modal {
 		width: 290px;
     	padding: 10px;
