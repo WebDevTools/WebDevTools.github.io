@@ -979,7 +979,7 @@ footer {
 @media only screen and (max-width: 460px) {
   header .arrow-up {
     right: 2%;
-    bottom: 20%; }
+    bottom: 22%; }
 
   .modal {
     width: 290px;
@@ -1011,7 +1011,7 @@ footer {
   header .block-bottom {
     padding-top: 0; }
   header .bottom-left {
-    width: 265px; }
+    width: 245px; }
     header .bottom-left .price {
       font-size: 30px;
       letter-spacing: 1px; }
@@ -1033,7 +1033,7 @@ footer {
   .advantages .text {
     font-size: 20px; }
   .advantages .button {
-    width: 265px; }
+    width: 245px; }
     .advantages .button a {
       font-size: 28px;
       padding: 18px 0; } }
