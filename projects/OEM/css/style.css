@@ -158,8 +158,8 @@ header {
     height: 46px;
     background: url("../img/arrow-up.png");
     position: absolute;
-    right: 3%;
-    bottom: 3%;
+    right: 1%;
+    bottom: 17%;
     opacity: 1;
     -webkit-animation: arrow 2s ease-in-out infinite;
             animation: arrow 2s ease-in-out infinite;
@@ -830,13 +830,17 @@ footer {
   header .block-bottom {
     padding-top: 10px; } }
 @media only screen and (max-width: 1000px) {
-  header .block-bottom {
-    text-align: center; }
-  header .bottom-left {
-    float: none; }
-  header .icon {
-    float: none;
-    margin-bottom: 20px; } }
+  header {
+    height: 100%; }
+    header .header {
+      height: 100%; }
+    header .block-bottom {
+      text-align: center; }
+    header .bottom-left {
+      float: none; }
+    header .icon {
+      float: none;
+      margin-bottom: 20px; } }
 @media only screen and (max-width: 1015px) {
   .work .step-1,
   .work .step-2,
@@ -1010,11 +1014,12 @@ footer {
       header .bottom-left .price span {
         font-size: 35px; }
     header .bottom-left .free {
-      padding: 15px 0; }
+      padding: 10px 0; }
       header .bottom-left .free p {
         font-size: 17px; }
     header .bottom-left .button a {
-      font-size: 28px; }
+      font-size: 28px;
+      padding: 18px 0; }
 
   .slider .photos .foto {
     width: 265px; }
@@ -1026,7 +1031,8 @@ footer {
   .advantages .button {
     width: 265px; }
     .advantages .button a {
-      font-size: 28px; } }
+      font-size: 28px;
+      padding: 18px 0; } }
 @media only screen and (max-width: 370px) {
   header h1 {
     font-size: 28px; }
