@@ -6,7 +6,7 @@
 body {
 	font-family: 'Roboto', sans-serif;
  	font-size: 16px;
- 	position: relative;
+ 	// position: relative;
 }
 
 *, *:before, *:after {
@@ -117,10 +117,7 @@ header {
 	}
 
 	.header-main {
-		
-		.main-block {
-			position: relative;
-		}	
+		position: relative;
 
 		h1 {
 			text-align: center;
@@ -139,7 +136,6 @@ header {
 
 		.cover {
 			width: 32%;
-			// text-align: center;
 		}
 
 		img {
