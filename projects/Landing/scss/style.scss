@@ -45,6 +45,10 @@ header {
 	height: 100vh;
 	position: relative;
 
+	.header {
+		height: 100vh;
+	}
+
 	.header-nav {
 		background-color: rgba(255, 255, 255, .3);
 
@@ -103,6 +107,13 @@ header {
 				cursor: pointer;
 			}	
 		}
+
+		p {
+			color: $white;
+			font-size: 20px;
+			float: right;
+			margin: 30px 0 0 40px;
+		}
 	}
 
 	.header-main {
@@ -118,6 +129,7 @@ header {
 			text-transform: uppercase;
 			letter-spacing: 2px;
 			margin: 60px 0 40px;
+			text-shadow: 1px 1px 10px $text;
 		}
 
 		.cover,
@@ -126,8 +138,8 @@ header {
 		}
 
 		.cover {
-			width: 42%;
-			text-align: center;
+			width: 32%;
+			// text-align: center;
 		}
 
 		img {
@@ -135,23 +147,24 @@ header {
 		}
 
 		.title {
-			width: 58%;
+			width: 68%;
 			float: right;
 			background-color: rgba(255, 255, 255, .3);
-			padding: 11px;
+			padding: 10px 0 10px 10px;
 			border-radius: 15px;
 		}
 
 		p {
 			color: $white;
-			font-size: 30px;
+			font-size: 28px;
 			letter-spacing: 1px;
 			line-height: 1.2;
+			text-shadow: 1px 1px 10px $text;
 		}
 
 		.button {
 			position: absolute;
-			bottom: -60px;
+			bottom: 14px;
 			right: 15px;
 			display: inline-block;
 
@@ -171,6 +184,10 @@ header {
 				text-shadow: 1px 1px 1px $text;
 				font-weight: bold;
 				border-bottom: 4px solid $red_but;
+
+				&:hover {
+					background: $red_hover;
+				}
 
 				&:active {
 					border-bottom: 2px solid $red;

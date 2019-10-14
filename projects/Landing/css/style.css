@@ -63,6 +63,8 @@ header {
   background-size: cover;
   height: 100vh;
   position: relative; }
+  header .header {
+    height: 100vh; }
   header .header-nav {
     background-color: rgba(255, 255, 255, 0.3); }
     header .header-nav .logo {
@@ -103,6 +105,11 @@ header {
         height: 40px;
         background: url("../img/phone.png");
         cursor: pointer; }
+    header .header-nav p {
+      color: #fff;
+      font-size: 20px;
+      float: right;
+      margin: 30px 0 0 40px; }
   header .header-main .main-block {
     position: relative; }
   header .header-main h1 {
@@ -111,29 +118,30 @@ header {
     font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin: 60px 0 40px; }
+    margin: 60px 0 40px;
+    text-shadow: 1px 1px 10px #08090a; }
   header .header-main .cover,
   header .header-main .title {
     display: inline-block; }
   header .header-main .cover {
-    width: 42%;
-    text-align: center; }
+    width: 32%; }
   header .header-main img {
     display: inline-block; }
   header .header-main .title {
-    width: 58%;
+    width: 68%;
     float: right;
     background-color: rgba(255, 255, 255, 0.3);
-    padding: 11px;
+    padding: 10px 0 10px 10px;
     border-radius: 15px; }
   header .header-main p {
     color: #fff;
-    font-size: 30px;
+    font-size: 28px;
     letter-spacing: 1px;
-    line-height: 1.2; }
+    line-height: 1.2;
+    text-shadow: 1px 1px 10px #08090a; }
   header .header-main .button {
     position: absolute;
-    bottom: -60px;
+    bottom: 14px;
     right: 15px;
     display: inline-block; }
     header .header-main .button a {
@@ -152,5 +160,7 @@ header {
       text-shadow: 1px 1px 1px #08090a;
       font-weight: bold;
       border-bottom: 4px solid #801e17; }
+      header .header-main .button a:hover {
+        background: #b72a1f; }
       header .header-main .button a:active {
         border-bottom: 2px solid #d12f22; }
