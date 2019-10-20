@@ -160,4 +160,124 @@ header {
         header .header-main .button a:hover {
           background: #b72a1f; }
         header .header-main .button a:active {
-          border-bottom: 2px solid #d12f22; }
+          border-bottom: 2px solid #801e17; }
+
+.steps-work {
+  padding: 60px 0; }
+  .steps-work h2 {
+    text-align: center;
+    color: #08090a;
+    font-size: 45px;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin-bottom: 40px; }
+  .steps-work .block {
+    width: 18%;
+    display: inline-block;
+    float: left;
+    margin: 0 1%;
+    text-align: center; }
+    .steps-work .block img {
+      width: 100%;
+      display: block; }
+    .steps-work .block p {
+      font-size: 20px;
+      color: #08090a;
+      line-height: 1.1;
+      margin-top: 10px; }
+
+.products {
+  padding: 60px 0;
+  background: #feeccf;
+  background: -webkit-gradient(linear, left top, left bottom, from(#feeccf), to(#fdd290));
+  background: linear-gradient(to bottom, #feeccf 0%, #fdd290 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feeccf', endColorstr='#fdd290',GradientType=0 ); }
+  .products h2 {
+    text-align: center;
+    color: #08090a;
+    font-size: 45px;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin-bottom: 40px; }
+  .products .product {
+    width: 40%;
+    margin: 0 5%;
+    display: inline-block;
+    float: left;
+    text-align: center; }
+    .products .product p {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #08090a; }
+    .products .product .product-1,
+    .products .product .product-2 {
+      display: inline-block;
+      width: 300px;
+      height: 375px;
+      -webkit-transition: all ease .2s;
+      transition: all ease .2s; }
+      .products .product .product-1:hover,
+      .products .product .product-2:hover {
+        -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.7);
+                box-shadow: 0 0 18px rgba(0, 0, 0, 0.7);
+        -webkit-transform: scale(1.04);
+                transform: scale(1.04); }
+    .products .product .product-1 {
+      background: url("../img/product_1.jpg") no-repeat; }
+    .products .product .product-2 {
+      background: url("../img/product_2.jpg") no-repeat; }
+
+.instruction {
+  padding: 60px 0;
+  text-align: center; }
+  .instruction h2 {
+    color: #08090a;
+    font-size: 40px;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-bottom: 5px; }
+  .instruction p {
+    font-size: 23px;
+    color: #08090a;
+    line-height: 1.3;
+    margin-top: 26px; }
+
+.reviews {
+  padding: 60px 0;
+  text-align: center;
+  background: #fcc570;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fcc570), to(#fbb445));
+  background: linear-gradient(to bottom, #fcc570 0%, #fbb445 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcc570', endColorstr='#fbb445',GradientType=0 ); }
+  .reviews h2 {
+    color: #08090a;
+    font-size: 45px;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin-bottom: 40px; }
+  .reviews .button {
+    display: inline-block;
+    height: 90px;
+    margin-top: 40px; }
+    .reviews .button a {
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 40px;
+      letter-spacing: 4px;
+      cursor: pointer;
+      outline: none;
+      border: 0;
+      padding: 20px;
+      background: #d12f22;
+      border-radius: 15px;
+      text-shadow: 1px 1px 1px #08090a;
+      font-weight: bold;
+      border-bottom: 4px solid #801e17; }
+      .reviews .button a:hover {
+        background: #b72a1f; }
+      .reviews .button a:active {
+        border-bottom: 2px solid #801e17;
+        -webkit-transform: translateY(2px);
+                transform: translateY(2px); }
