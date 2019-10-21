@@ -328,6 +328,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcc570', end
 		margin-bottom: 40px;
 	}
 
+	.block-reviews {
+
+		.image_wrap {
+			display: block;
+			margin-bottom: 30px;
+			
+		}
+
+		img {
+			display: inline-block;
+			border-radius: 50%;
+		}
+
+		p {
+			display: inline-block;
+			font-size: 18px;
+			color: $text;
+			font-style: italic;
+			line-height: 1.3;
+			width: 80%;
+		}
+	}
+
 	.button {
 		display: inline-block;
 		height: 90px;
@@ -363,5 +386,66 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcc570', end
 }
 
 
-// @import "_slider";
+// Footer =================================
+
+footer {
+	padding: 40px 0;
+	background: #D9A668;
+
+	.nav {
+		width: 30%;
+		float: left;
+
+		a {
+			display: inline-block;
+			font-size: 18px;
+			color: $text;
+			margin-bottom: 5px;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.copyright {
+		width: 40%;
+		float: left;
+		text-align: center;
+
+		a {
+			display: inline-block;
+			margin-top: 5px;
+			font-size: 18px;
+			color: $text;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.social {
+		width: 30%;
+		float: right;
+		text-align: right;
+
+		a {
+			display: inline-block;
+			background: url("../img/kontact.png") no-repeat;
+			height: 19px;
+			padding-left: 40px;
+			margin-top: 10px;
+			font-size: 20px;
+			color: $text;
+			font-style: italic;
+			text-decoration: none;
+			font-weight: 700;
+		}
+	}
+}
+
+
+
+@import "_slick";
 // @import "_media";
