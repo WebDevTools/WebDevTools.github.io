@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/style.css">
+	<title>Test</title>
+</head>
+<body>
+	<header class="header">
+		
+			<div class="header__top">
+
+				<div class="wrapper">
+
+					<div class="block__top clearfix">
+						
+						<div class="label">
+							<a href="#">Волгоградская область</a>
+						</div>
+
+						<nav class="nav">
+							<ul class="list">
+								<li class="item">
+									<a href="#">Тендеры</a>
+								</li>
+								<li class="item">
+									<a href="#">База подрядчиков</a>
+								</li>
+								<li class="item">
+									<a href="#">Другие сервисы</a>
+								</li>
+							</ul>
+						</nav>
+
+					</div>
+
+				</div>
+
+			</div>
+			
+			<div class="header__bottom">
+
+				<div class="wrapper">
+
+					<div class="block__bottom clearfix">
+
+						<div class="logo">
+						    <a href="#" class="logo-link">
+						    	<img src="img/logo.svg" alt="test">
+						    </a>
+					    </div>
+
+					    <div class="button">
+					    	<button>Каталог</button>
+					    </div>
+
+					    <div class="form">
+					    	<form name="test" method="post" action="nput1.php">
+					    		<input type="text" id="autocomplete" placeholder="Хочу найти..." autocomplete="off">
+					    	</form>
+					    </div>
+
+					    <div class="button-list">
+					    	<button>Список</button>
+					    </div>
+
+					    <div class="icon">
+					    	<img src="img/icon.png" alt="icon">
+					    </div>
+
+					</div>
+
+		    	</div>
+
+			</div>
+			
+	</header>
+
+	<script src="js/autocomplete.js"></script>
+
+</body>
+</html>
+
+<script>
+	fetch('js/data.json').then(data => {
+		data.json().then(json => {
+		  let countries = json.countries
+		  Autocomplete('#autocomplete', countries)
+		})
+	})
+</script>
